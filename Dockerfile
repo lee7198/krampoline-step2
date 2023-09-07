@@ -2,7 +2,7 @@
 FROM krmp-d2hub-idock.9rum.cc/goorm/node:16 AS build
 WORKDIR /usr/src/app
 COPY earth-client/package*.json ./
-COPY earth-client/.npmrc ./
+COPY ~/.npmrc ./
 RUN npm i
 COPY earth-client/ ./
 RUN npm run build
