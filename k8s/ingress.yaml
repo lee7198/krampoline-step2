@@ -6,14 +6,14 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
   labels:
     app.kubernetes.io/managed-by: kargocd
-  name: krampoline
+  name: earth-client
   namespace: default
 spec:
   rules:
     - http:
         paths:
           - backend:
-              serviceName: krampoline
+              serviceName: earth-client
               servicePort: 5173
             # 여러분의 app path 를 넣어주세요.
             path: /kdeb913cc536ca(/|$)(.*)

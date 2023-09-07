@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: krampoline
-  name: krampoline
+    app: earth-client
+  name: earth-client
 spec:
   ports:
     - name: 5173-5173
@@ -11,5 +11,5 @@ spec:
       protocol: TCP
       targetPort: 5173
   selector:
-    app: krampoline
+    app: earth-client
   type: LoadBalancer

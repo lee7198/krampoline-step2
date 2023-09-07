@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: krampoline
+  name: earth-client
   labels:
-    app: krampoline
+    app: earth-client
 spec:
   selector:
     matchLabels:
-      app: krampoline
+      app: earth-client
   template:
     metadata:
       labels:
-        app: krampoline
+        app: earth-client
     spec:
       containers:
-        - name: krampoline
+        - name: earth-client
           # 여러분의 image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_130dbca7e026
