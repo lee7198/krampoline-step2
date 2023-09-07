@@ -4,8 +4,7 @@ WORKDIR /usr/src/app
 COPY earth-client/package*.json ./
 
 # gds npmrc
-COPY ./.npmrc .
-RUN rm -f .npmrc
+COPY earth-client/.npmrc ./
 
 RUN npm i
 COPY earth-client/ ./
