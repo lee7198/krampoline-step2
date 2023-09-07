@@ -5,7 +5,7 @@ COPY earth-client/ ./
 # copy npmrc
 COPY .npmrc /root/
 
-RUN npm i --save --legacy-peer-deps 
+RUN npm i
 RUN npm run build
 RUN npm install -g serve
 EXPOSE 5173
