@@ -6,10 +6,10 @@ metadata:
   name: krampoline
 spec:
   ports:
-    - name: 3000-3000
-      port: 3000
+    - name: 5173-5173
+      port: 5173
       protocol: TCP
-      targetPort: 3000
+      targetPort: 5173
   selector:
     app: krampoline
   type: LoadBalancer
