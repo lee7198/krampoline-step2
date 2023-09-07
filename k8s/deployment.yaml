@@ -16,4 +16,4 @@ spec:
       containers:
         - name: earth-client
           # 여러분의 image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_b899eddf9f68
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_ef382e12bd73
