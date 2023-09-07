@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 const env = loadEnv( process.cwd(), '')
 
-const staticServerUri = "kd9b1d28519fea" || "";  
+const staticServerUri = "k31a28776702aa" || "";  
 
 // https://vitejs.dev/config/
 export default defineConfig({

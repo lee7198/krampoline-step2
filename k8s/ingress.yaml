@@ -16,4 +16,4 @@ spec:
               serviceName: earth-client
               servicePort: 5173
             # 여러분의 app path 를 넣어주세요.
-            path: /kd9b1d28519fea(/|$)(.*)
+            path: /k31a28776702aa(/|$)(.*)
