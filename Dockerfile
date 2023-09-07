@@ -1,13 +1,9 @@
 # Build stage
-FROM krmp-d2hub-idock.9rum.cc/goorm/node:16
+FROM krmp-d2hub-idock.9rum.cc/goorm/node:16 AS build
 WORKDIR /usr/src/app
-# COPY earth-client/package*.json ./
-
-# gds npmrc
-#COPY earth-client/.npmrc ./
-COPY .npmrc /usr/src/app/.npmrc
-
-RUN npm i && rm -f .npmrc
+COPY earth-client/package*.json ./
+COPY earth-client/.npmrc ./
+RUN npm ci && rm -rf .npmrc
 COPY earth-client/ ./
 RUN npm run build
 
